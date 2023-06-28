@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <title>Login</title>
+      </head>
+    <body>
+        <div id="login">
+            <form class="card">
+
+                <div class="card-header">
+
+                    <h2 class ="titulo-login">LOGIN</h2>
+
+                </div >
+                <div class="divpng">
+                    <img class="img" src="./logo.png" alt="">
+                   </div>
+                    <div class="card-content">
+                        <div class="radio-btn">
+                            <label for="pf">Pessoa Fisica</label>
+                            <input type="radio" class="btn-option" name="pessoa-tipo" value="pf">
+                        
+                            <label for="pf">Pessoa Juridica</label>
+                            <input type="radio" class="btn-option" name="pessoa-tipo" value="pj">
+                        </div>
+                    </div>
+                    <div class="card-content-area">
+
+                        <label for="EMAIL">EMAIL</label>
+
+                        <input type="email" id="EMAIL" autocomplete="off"required>
+
+                    </div>
+
+                    <div class="card-content-area">
+
+                        <label for="password">SENHA</label>
+
+                        <input type="password" id="senha" autocomplete="off"required>
+                        <div class="icon">
+                            <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
+                        </div>
+
+                        <script src="script.js"></script>
+
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+
+                    <input type="submit" value="ENTRAR" class="submit" >
+                    
+                
+
+                </div>
+                <div class="login1">
+                    <div class="login2"><h4>Não tem uma conta?</h4></div><div class="login3"><a href="pagina2.html" class="recuperar_senha">Cadastre-se</a></div>
+                </div> 
+            </form>
+
+        </div>
+
+    </body>
+
+</html>

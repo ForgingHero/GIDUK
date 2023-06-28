@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Style1.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="icon" href="/Img/logos//favicon.png" type="image/png">
+    <title>Adote - Giduk</title>
+</head>
+<body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+      <style>
+        .access-button {
+        width: 40% !important;
+        border-radius: 50px !important;
+        border: solid 7px #67c8d540 !important;
+        }
+      </style>
+    
+<nav>
+    <!--Tamanho, alinhamento, cor de fundo etc-->
+    <div class="Duvidas1">
+        <!--Sobre a fonte-->
+        <a href="../Paginas/Suporte.html" class="Duvidas2">Contato</a>
+    </div>
+
+    <div class="Menu">
+        <div>
+            <a href="../Index.php">
+                <img src="../Img/logos/GIDUK_Logo.png" id="Img">
+            </a>
+        </div>
+
+        <div>
+            <!--Classe para aumentar o padding-bottom dos links(Espacamento_baixo)-->
+            <a href="./Sobre_Nos.html"  class="Links">Sobre</a>
+            <a href="./SejaNossoParceiro.html"  class="Links">Parceiros</a>
+            <a href="./formularios/Login/LoginPessoa.html"  class="btn" style="margin-right: 15px;">Fazer login</a>
+            <a href="./TermosContrato.html" class="btn">Cadastre-se</a>
+        </div>
+    </div>
+</nav>
+
+    <section class="section_margem">
+        <div id='popup' class='popup'>
+                       
+            <div class='popup-img-btn'>
+                <h2>Lobinho</h2>
+                <div class='div-foto'>
+                    <img src='../Img/animais/Lobinho.jpg'>
+                </div>
+                <a href="https://www.caosemdono.com.br/adocoes-e-apadrinhamento"><button id='popup-btn'>Ir ao site</button></a>
+            </div>
+
+            <div class='popup-dados'>
+                <a href='javascript: fechar();'>
+                    <button id='btn-fechar-popup' onclick='toggle()'>X</button>
+                </a>
+                <div class='dados-animais-popup'>                            
+                    <p>Nome: Lobinho</p>
+                    <p>Porte: Grande</p>
+                    <p>Sexo: Macho</p>
+                    <p>Descrição: Brincalhão e amoroso</p>
+                    <p>Localização: São Paulo - SP</p>
+                </div>
+            </div>
+            </div>
+        
+        <div class="desfoque" id="blur">
+            
+        <h2 class="Fonte" style="font-size: 30px; margin-left: 60px;">Adote um novo companheiro</h2>
+
+        <div class="Conteiner_Organizacao">
+            <select class="SeletorAdote">
+                <option selected disabled value="">Animal</option>
+                <option value="cachorro">Cachorro</option>
+                <option value="gato">Gato</option>
+            </select>
+
+            <select class="SeletorAdote">
+                <option selected disabled value="">Sexo</option>
+                <option value="macho">Macho</option>
+                <option value="femea">Fêmea</option>
+            </select>
+
+            <select class="SeletorAdote">
+                <option selected disabled value="">Porte</option>
+                <option value="grande">Grande</option>
+                <option value="medio">Médio</option>
+                <option value="pequeno">Pequeno</option>
+            </select>
+
+            <input type="submit" value="Buscar" id="Botao_Buscar">
+        </div>
+
+        
+        <div class="Container_Grid">
+            <a style = 'text-decoration: none;' href='javascript: abrir();' onclick='toggle()'>
+            <div>
+                <img src="../Img/animais/Lobinho.jpg" class="Imagens">
+                <P class="Titulo_Fichas"><b>Lobinho</b></P>
+            </div></a>
+
+            <a style = 'text-decoration: none;' href='javascript: abrir();' onclick='toggle()'>
+            <div>
+                <img src="../Img/animais/Aquiles.jpg" class="Imagens">
+                <P class="Titulo_Fichas"><b>Aquiles</b></P>
+            </div></a>
+
+            <a style = 'text-decoration: none;' href='javascript: abrir();' onclick='toggle()'>
+            <div>
+                <img src="../Img/animais/Jasmine.jpg" class="Imagens">
+                <P class="Titulo_Fichas"><b>Jasmine</b></P>
+            </div></a>
+
+            <a style = 'text-decoration: none;' href='javascript: abrir();' onclick='toggle()'>
+            <div>
+                <img src="../Img/animais/Bento.jpg" class="Imagens">
+                <P class="Titulo_Fichas"><b>Bento</b></P>
+            </div></a>
+
+            <a style = 'text-decoration: none;' href='javascript: abrir();' onclick='toggle()'>
+            <div>
+                <img src="../Img/animais/Estopinha.jpg" class="Imagens">
+                <P class="Titulo_Fichas"><b>Estopinha</b></P>
+            </div></a>
+
+        </div>
+    </div>
+    </section>
+
+
+    <script type="text/javascript">
+        function abrir(){
+            document.getElementById('popup').style.display = "block";
+            document.getElementById('popup').style.zIndex = 3;
+        }
+
+        function fechar(){
+            document.getElementById('popup').style.display = "none";
+        }
+        function toggle(){
+            var blur = document.getElementById ('blur');
+            blur.classList.toggle('active');
+        }
+
+    </script>
+
+    <footer>
+        <div class="container-footer">
+            <ul>
+                <li class="titulo"></li>
+                <p>GIDUK é uma plataforma que te ajuda <br> a divulgar os animais que precisam de um lar.<br> Adote com responsabilidade!</p>
+             </ul>
+
+            <ul>
+                <li class="titulo"><strong> GIDUK </strong></li>
+                <li> <a href="./Sobre_Nos.html"> Sobre</a> </li>
+                <li> <a href="./SejaNossoParceiro.html"> ONGs/Abrigos</a> </li>
+                <li> <a href="./TermosContrato.html"> Seja nosso parceiro</a></li>
+            </ul>
+            <ul>
+                <li class="titulo"><strong> DIVULGUE UM ANIMAL</strong></li>
+                <li> <a href="./formularios/Login/LoginPessoa.html"> Cadastre um animal</a></li>
+            </ul>
+            <div class="medias-sociais">
+                <a href=""> <img src="../Img/icones-socialmedia/icons8-instagram-30.svg"></a>
+                <a href=""> <img src="../Img/icones-socialmedia/icons8-facebook1.svg"></a>
+                <a href=""> <img src="../Img/icones-socialmedia/icons8-twitter (1).svg"></a>
+            </div>
+    </footer>
+</body>
+</html>

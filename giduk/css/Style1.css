@@ -1,0 +1,869 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+}
+
+.conteiner-maior{
+    padding: 40px 40px 70px 40px;
+}
+
+/*Estilização do menu*/
+.Duvidas1{
+    background-color: #000000;
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 70px;
+    font-size: 15.5px;
+}
+
+.Duvidas2{
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.Menu{
+    background-color: #ffffff;
+    border-bottom: 1px solid #8d8d8d;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    /*Alinhamento do elementos do nav e espaçamento*/
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Img{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 0%;
+    /*Distanciar a imagem do canto da tela*/
+    margin-left: 60px;
+}
+
+/*Links do site*/
+.Links{
+    text-decoration: none;
+    Color:#000000;
+    font-size: 16px;
+    /*Distância entre as letras*/
+    letter-spacing: 2px;
+    margin-right: 18px;
+}
+
+.Links:hover{
+    color: #F2CBBD;
+    text-decoration: none;
+}
+
+/*Estilo para os botões*/
+/*--------------------------------Vai ter o btn cadastrar?---------------*/
+.btn{
+    color: rgb(255, 255, 255);
+    padding: 10px 14px 10px 14px;
+    background-color:#255957;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 70px;
+
+}
+
+.btn_{
+    color: rgb(255, 255, 255);
+    padding: 10px 14px 10px 14px;
+    background-color: black;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 70px;
+}
+
+.espacozinho{
+    margin-right: 10px;
+}
+
+#cadastrar:checked{
+    background-color:#255957;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: #000000;
+    background-color: #F2CBBD; 
+    cursor: pointer;
+}
+/*Inicio do conteúdo do site*/
+
+/*Slide*/
+
+.content{
+    height: 450px;
+    width: 1440px;
+    border-radius: 20px;
+    overflow: hidden;/*esconde o conteúdo que está ultrapassando a div*/
+    position: relative;/*posiciona o elemento onde quiser na tela*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -0.5%);
+}
+
+.navigation{
+    position: absolute;/*só é possivel mover o filho, dentro da div pai (content) não da para mover para qualquer lugar*/
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    
+}
+
+/*.input-slide{
+    display: none;
+}*/
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+    animation: slidy 15000ms infinite;
+}
+
+.slide{
+    width: 20%;
+    transition: .9s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slidy {
+    0%{margin-left:0%;}
+  10%{margin-left:0%;}
+
+  20%{margin-left:-100%;}
+  30%{margin-left:-100%;}
+
+  40%{margin-left:-200%;}
+  50%{margin-left:-200%;}
+
+  60%{margin-left:-300%;}
+  70%{margin-left:-300%;}
+
+  80%{margin-left:-400%;}
+  90%{margin-left:-400%;}
+
+  
+  100%{margin-left:-0%;}
+}
+
+
+/*Inicio da estilização das fichas dos cachoros*/
+/*Elemento pai*/
+.Container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 98%;
+}
+
+/*Divs filhas*/
+.Container div{
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    border-radius: 7px;
+    text-align: center;
+    margin-bottom: 60px;
+    width: 233px;
+    height: 270px;
+    box-shadow: 0px 2px 3px 2px #dfdfdf ;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#popup{
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    padding: 15px;
+    background-color: #255950;
+    display: none;
+    text-align: center;
+    margin: auto auto; 
+    width:640px; 
+    height: 550px;
+    border-radius: 12px;
+    box-shadow: 3px 4px #90909097;
+   
+}
+
+.desfoque#blur.active{
+    filter: blur(60px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#btn-fechar-popup{
+    padding-left: 225px;
+    border: none;
+    background-color: #255950;
+    cursor: pointer; 
+    font-size: 24px;
+    text-decoration: none;
+    margin-bottom: 89px;
+    color: #F2CBBD;
+}
+
+.popup-img-btn{
+    width:50%;
+    float: left;
+}
+
+.div-foto{
+    width: 218px;
+    height: 218px;
+    border-radius: 50%;
+    background-color: #ffffff30;
+    margin-left: 43px;
+}
+
+.dados-animais-popup{
+    height: 290px;
+    cursor: default;  
+    color: rgb(255, 255, 255); 
+    text-align: left;
+    background-color: #356d63;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-left: 28px;
+
+}
+
+.popup-img-btn img{
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%;
+    margin-top: 9px;
+}
+
+.popup-img-btn h2{
+    font-size: 27px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 40px;
+    cursor:default;
+    margin-bottom: 43px;
+}
+
+#popup-btn{
+    border: solid 1px #255950;
+    color: rgb(255, 255, 255);
+    background-color: #356d63;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 48px;
+    width: 214px;
+    margin-left: 15px;
+    padding:6px;
+}
+
+#popup-btn:hover{
+    color: #000000;
+    background-color: #f2cbbdcf;
+    cursor: pointer;
+}
+
+.popup-dados{
+    width: 40%;
+    float: right;
+    height: auto;
+
+}
+
+.Titulo_Fichas{
+    color: #255950;
+    /*font-size: 17px;*/
+}
+
+.Titulo_Fichas:hover{
+    color: #741A1A ;
+}
+
+.Conteiner_Btn{
+    text-align: center;
+}
+
+
+/*Inicio dos comandos do Roda pé da página*/
+footer{
+    width: 100%;
+    background-color: #255950;
+    padding: 20px 32px;
+    padding-right: 50px;
+}
+footer p{
+    color: #fff;
+}
+.container-footer{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.titulo {
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    margin: 10px 0;
+}
+footer ul li a{
+    font-size: 16px;
+    text-transform: lowercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    display: block;
+    transition: all 0.3s ease;
+}
+footer ul li a:hover{
+    padding-left: 5px;
+    color: #000000;
+}
+.medias-sociais{
+    padding-top: 30px;
+}
+.medias-sociais a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 49px;
+    margin: 0 5px 5px 0;
+}
+
+
+
+/*---------------------------- Sobre nós -----------------------------------*/
+.Section_Sobre{
+    margin: 0;
+    padding: 0;
+}
+/*.teste2{
+    width: 1580px;
+    height: 300px;
+}
+*/
+.Fonte_Sobre{
+    color: #255950;
+    font-size: 22px;
+    margin-left: 35px;
+}
+
+.TextoSobre{
+    background-color: #fff;
+    padding: 10px 0px 35px 35px;
+    line-height: 2;
+    width: 90%;
+    text-align: left;
+}
+
+.teste3{
+    margin: 40px 50px 50px 50px;
+
+}
+
+.FotosIntegrantes{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    gap: 90px;
+    max-width: 320px;
+    margin-left: 30%;
+   /* border: #000000 1px solid;*/
+}
+
+.Integrantes img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.Integrantes p{
+    text-align: center;
+    font-weight: 400;
+    color: #255950;
+}
+
+/*-----------------------------------------Seja nosso parceiro-------------------------------------------------*/
+
+/*Section*/
+
+.Seja_Nosso_Parceiro{
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+}
+
+.Texto_Seja_Parceiro{
+    margin: 50px;
+    font-size: 16px;
+    text-align: justify;
+    width: 90%;
+    background-color: #ffffff;
+}
+
+.Fonte{
+    color: #255950;
+    margin-top: 50px;
+    font-size: 23px;
+
+}
+
+.Linhas{
+    line-height: 27px;
+}
+
+input{
+    margin-top: 20px;
+}
+
+.Botao{
+    padding: 7px 20px;
+    border-radius: 5px;
+    background-color: #255950;
+    border: #255950 1px solid;
+    margin-top: 27px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.Botao:hover{
+    background-color:#F2CBBD;
+    border: #F2CBBD 1px solid;
+    cursor: pointer;
+}
+
+.logo_parcerias1{
+    height: 174px;
+    width: 240px;
+    margin-right: 50px;
+    
+}
+
+.Parceria_Logos{
+    text-align: center;
+    
+}
+
+.logo_parcerias2{
+    height: 182px;
+    width: 182px;
+    
+}
+
+
+/*-------------------------------------Suporte-------------------------------*/
+
+/*Section*/
+
+.Conteiner{
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    width: 100%;
+    height: 450px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px 55px 40px 40px;
+    margin: 100px 100px 100px 400px; 
+    box-shadow: #d8d8d8 3px 4px;
+}
+
+.Titulo_Form{
+    font-size: 20px;
+    padding-left: 40px;
+    color: #464646;
+}
+
+#Formas_Cont{
+    padding-top: 50px;
+    color: #464646;
+    font-size: 16px;
+    padding-bottom: 12px;
+
+}
+
+#Fonte{
+    color: #464646;
+    font-size: 16px;
+    padding-left: 40px;
+}
+
+section li{
+    color: #4f4f4f;
+    font-size: 14px;
+    line-height: 27px;
+    list-style: none;
+    
+}
+
+section ul{
+    margin-top: 15px;
+    
+}
+
+/*Formulário*/
+
+.Contato{
+    max-width: 340px;
+    width: 100%;
+ 
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.Field{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: #bebebe 1px solid;
+    border-radius: 4px;
+    background-color: #f1f0f0;
+}
+
+textarea{
+    height: 140px;
+    
+}
+
+#Botao_Enviar{
+    background-color: #f2ecec;
+    padding: 5px 6px;
+    border: #cbcbcb 1px solid;
+    width: 70px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#Botao_Enviar:hover{
+    background-color: #e9e2e2;
+}
+
+.RodaPe_Suporte{
+    padding: 20px 40px;
+    background-color: #2E8B57;
+    height: 150px;
+    max-width: 100%;
+}
+
+#h4_Suporte{
+    color: rgb(248, 248, 248);
+    font-size: 20px;
+}
+
+/*---------------------------------------------------Adote-----------------------------------------*/
+
+.Fonte{
+    margin-bottom: 40px;
+}
+
+.FiltroOrganização{
+    align-items: center;
+    width: 100%;
+}
+
+/*Form */
+.Conteiner_Organizacao{
+    background-color: #ffffff;
+    max-width: 92%;
+    width: 100%;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+    padding-top: 28px;
+    border: #eeeeee solid 1px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.SeletorAdote{
+    border: 1px solid rgb(147, 147, 147);
+    border-radius: 5px;
+    height: 50px;
+    width: 12%;
+    height:45px;
+    margin-bottom: 28px;
+}
+
+#Botao_Buscar{
+    background-color:  #255950;
+    color: #ffffff;
+    width: 100px;
+    height: 50px;
+    border: 1px solid  #255950;
+    border-radius: 6px;
+    padding: 9px 7px;
+}
+
+#Botao_Buscar:hover{
+    background-color: #255950;
+    color: #ffffff;
+    border: 1px solid #33985f;
+}
+
+/*Fotos dos cachorros*/
+.Container_Grid{ 
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 98%;
+}
+
+.Container_Grid div{
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    border-radius: 7px;
+    text-align: center;
+    margin-bottom: 60px;
+    width: 233px;
+    height: 300px;
+    box-shadow: 0px 2px 3px 2px #dfdfdf ;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.Imagens{
+    max-width: 500px;
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 9px;    
+    border-top-right-radius: 9px;
+}
+
+.Titulo_Fichas{
+    color:  #255950;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.Titulo_Fichas:hover{
+    color: #F2CBBD;
+}
+
+/*------------------------------------------------------------Perfil--------------------------------------------------------------*/
+.user-pic{
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 6%;
+}
+
+.sub-menu-wrap{
+    position: absolute;
+    top: 16%;
+    right: 5%;
+    width: 220px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+    
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+/*PARTE BRANCA DO PERFIL DROPDOWN*/
+.sub-menu{
+    background: #fff; 
+    margin: 10px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 7px;
+    padding: 7px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info h3{
+    font-weight: 300;
+}
+
+.user-info img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    padding-left: 3px;
+}
+
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px;
+}
+
+.sub-menu-link p{
+    width: 100%;
+}
+
+.sub-menu-link img{
+    width: 20px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+.sub-menu-link:hover p{
+    font-weight:600;
+}
+
+.box-animais{
+    width: 70%;
+    padding: 40px 40px 70px 40px;
+    background-color: #e7e7e7;
+    overflow: auto;
+    height: 600px;
+    /*margin-left: 300px;
+    border: #000000 1px dotted;*/
+
+}
+
+.org-perfil{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dadosPerfil{
+    width: auto;
+    text-align: center;
+    height: 500px;
+    width: 20%;
+    background-color: #fff;
+    padding:2%;
+    padding-top: 8%;
+}
+
+.Foto_perfil{
+    height: 170px;
+    width: 170px;
+    border-radius: 50% 50%;
+    background-color: #8d8d8d;
+    margin: 0 auto;
+    
+}
+
+.btnCadastrarNovoAnimal{
+    padding: 12px 21px;
+    color: #ffffff;
+    background-color: #255957;
+    border-radius: 7px;
+    border: #255950 solid 1px;
+    letter-spacing: 2px;
+    align-items: center;
+}
+
+.btnCadastrarNovoAnimal:hover{
+    background-color:#F2CBBD;
+    border: #F2CBBD 1px solid;
+    cursor: pointer;
+}
+
+#btnExcluir{
+    background-color: #881d1d; 
+    border:none;
+}
+
+#btnExcluir:hover{
+    background-color: #bb2020; 
+    border:none;
+}
+
+.Animais_Cadastrados{ 
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Animais_Cadastrados div{
+    text-align: center;
+}
+
+.Imagens-perfil{
+    max-width: 210px;
+    width: 100%;
+    height: 200px;
+    border-radius: 50% 50%;
+}
+
+.NomePetPerfil{
+    color:  #255950;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.botao_formularios{
+    margin: 40px auto; 
+    display: block; 
+    background-color: #255950;
+    margin-top: 8%;
+    height: 35px;
+    width: 6cm;
+    color: #ffffff;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    border-radius: 14px;
+    border: 1px solid #255950;
+    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.footerzin{
+    display: flex ;
+    justify-content: space-between ;
+    color: #fff ;
+
+}

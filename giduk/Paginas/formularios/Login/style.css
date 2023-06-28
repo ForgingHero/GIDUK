@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+body {
+
+    padding: 0;
+
+    margin: 0;
+
+    background-color: #255950;
+
+}
+/*inputs radio*/
+.radio-btn{
+    display: flex;
+    /*padding: 4px;*/
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding-left: -75px;
+    padding-right: -5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.btn-option{
+    /*border: 0px;*/
+    width: 15px;
+    margin-top: -1.7px;
+    height: 20px;
+    vertical-align: middle;
+}
+#login {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+    font-family: 'Kanit', sans-serif;
+
+}
+.login1{
+
+display: flex;
+    flex-direction: row;
+    color: #255950;
+    font-size: 12px;
+    justify-items: center;
+    opacity: 0.8;
+    align-items: center;
+    justify-content: center;
+}
+.login2
+{   justify-items: flex-start;
+    
+    display: flex;
+    flex-direction: column;
+}
+.login3
+{   
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    
+
+}
+a:-webkit-any-link {
+    
+    align-self: center;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.card {
+
+    background-color: rgb(243, 230, 243);
+
+    padding: 30px 30px 10px 30px;
+
+    border-radius: 19px;
+
+    width:290px;
+    
+
+}
+
+.card-header {
+
+    padding-bottom: 10px;
+    
+    font-style: normal;
+    
+    font-family: Arial, Helvetica, sans-serif;
+
+    opacity: 0.8;
+
+    color: #255950;
+  
+    display: flex;
+
+    flex-direction: row;
+ 
+    font-size: 22px;
+
+    justify-items: center;
+
+    opacity: 0.8;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.card-content label {
+
+    color: #000000;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+}
+
+.card-content-area {
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+
+}
+
+.card-content-area input {
+
+    margin-top: 10px;
+    padding:0 5px 5px 0;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #255950;
+    outline: none;
+    color: #000000;
+
+}
+
+.card-footer {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.card-footer .submit{
+
+    width: 100%;
+
+    height: 40px;
+
+    background-color:#255950;
+
+    border:none;
+
+    color:#FFFFFF;
+
+    margin: 0px 0;
+
+    font-family: 'Kanit', 'sans-serif';
+
+}
+
+.card-footer a {
+
+    text-align: center;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+    color: #000000;
+
+    text-decoration: none;
+
+}
+.divpng{
+    display: flex;
+    justify-content: center;
+}
+.img{
+    
+    height: 50%;
+    width: 50%;
+    margin-bottom: 15px;
+}
+.titulo-login{
+    font-family: 'Kanit', 'sans-serif';
+}
+
+h2 {
+    margin: 0px;
+}
+
+.icon{
+    position: relative;
+    bottom: 165px;
+    top: -15px;
+    right: -260px;
+    transform: translateY(-50%);
+    /*width: 25px;
+    height: 25px;*/
+    cursor: pointer;
+    color: #232323;
+}
+

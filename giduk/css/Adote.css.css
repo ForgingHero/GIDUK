@@ -1,0 +1,252 @@
+
+*{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+body{
+    margin: 0%;
+    background-color: rgb(241, 241, 241);
+}
+
+section{
+    padding: 40px 40px 70px 40px;
+}
+
+h2{
+    color: #7ED957;
+    font-size: 35px;
+}
+
+/*Estilização do menu*/
+#Duvidas1{
+    background-color: #7ED957;
+    height: 26px;
+    padding-top: 8px;
+    padding-left: 40px;
+    font-size: 13px;
+}
+
+#Duvidas2{
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.Menu{
+    background-color: #ffffff;
+    border-bottom: 1px solid #757575;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    /*Alinhamento do elementos do nav e espaçamento*/
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Img{
+    height: 87px;
+    width: 80px;
+    margin-bottom: 0%;
+    /*Distanciar a imagem do canto da tela*/
+    margin-left: 35px;
+}
+
+/*Links do site*/
+.Links{
+    text-decoration: none;
+    Color:#696969;
+    font-size: 14px;
+    /*Distância entre as letras*/
+    letter-spacing: 2px;
+    margin-right: 18px;
+}
+
+.Links:hover{
+    color: #741A1A;
+}
+
+/*Estilo para os botões*/
+#btn{
+    color: rgb(0, 0, 0);
+    padding: 6px 10px 6px 10px;
+    background-color:#7ED957;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 48px;
+
+}
+
+#btn:hover{
+    color: #ffffff;
+    background-color: #741A1A;
+}
+
+/*Filtro */
+.Conteiner_Organizacao{
+    background-color: #fff;
+    width: 95%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    padding: 15px 20px 15px 20px;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.Seletor{
+    color: #707070;
+    padding: 10px 7px;
+    border: 1px solid #696969;
+    width: 100px;
+    border-radius: 6px;
+}
+
+#Botao{
+    background-color: #7ED957;
+    color: #424242;
+    width: 60px;
+    margin: 16px 7px;
+    border: 1px solid #297a03;
+    border-radius: 6px;
+}
+
+#Botao:hover{
+    background-color:#47e731;
+    color: #ffffff;
+    border: 1px solid #3aa10a;
+    cursor: pointer;
+}
+
+/*Fotos dos cachorros*/
+.Container{
+    display: grid;
+    grid-template-columns: 212px 212px 212px 212px;
+    gap: 24px;
+}
+
+.Container div{
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    border-radius: 7px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 50px;
+    height: 300px;
+    box-shadow: 0px 2px 3px 2px #dfdfdf ;
+}
+
+.Imagens{
+    width: 212px;
+    height: 180px;
+    border-top-left-radius: 7px;    
+    border-top-right-radius: 7px;
+}
+
+.Titulo_Fichas{
+    color: #7ED957;
+    font-size: 17px;
+}
+
+.Titulo_Fichas:hover{
+    color: #741A1A ;
+}
+
+/*Inicio dos comandos do Roda pé da página*/
+footer{
+    background-color: #7ED957;
+}
+
+footer .Container_Footer{
+    display: flex;
+    color: #464646;
+}
+
+footer .Container_Footer ul{
+    width: 25%;
+    margin-right: 50px;
+}
+
+/*Margem entre divulgue um animal e contato*/
+#Margem_Topo{
+    margin-top: 2px;
+}
+
+/*Divisão entre o GIDUk e a parte de links*/
+.margem_esquerda{
+    margin-left: 143px;
+}
+
+footer .Container_Footer h3{
+    margin-bottom: 19px;
+    font-weight:540;
+    margin-top: 27px;
+    color: #fff;
+    font-size: 17px;
+}
+
+#Cor_Fonte{
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+footer .Container_Footer .Redes_Sociais img{
+    margin-right: 10px;
+}
+
+footer .Container_Footer ul > p{
+    margin-bottom: 40px;
+}
+
+footer .Container_Footer li{
+    margin: 27px 0;
+    list-style: none;
+}
+
+footer .Container_Footer a{
+    color: rgb(65, 65, 65);
+    text-decoration: none;
+}
+p{
+    line-height: 20px;
+}
+
+ /*Responsivo*/
+ @media (max-width: 960px){
+    /*Footer*/
+    Footer .Container_Footer{
+    flex-direction: column;
+    
+    }
+
+    ul{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    footer .Container_Footer ul{
+        margin-right: 0;
+        width: 0%;
+   
+    }
+    footer p{ 
+        width: 100%;
+    }
+    
+    .margem_esquerda{
+        margin-left: 0%;
+    }
+
+
+
+
+
+
+
+    
+ }
